@@ -1,6 +1,9 @@
 <h2>All Pages</h2>
+<p><%= link_to 'Create new page', new_page_url %></p>
 <ul>
 	<% @pages.each do |page| %>
-	<li><%= page.permalink %> : <%= page.title %></li>
-<% end %>
+	<li>
+		<%= link_to page.permalink, page_path(page) %> : <%= page.title %>
+	</li>
+	<% end %>
 </ul>
