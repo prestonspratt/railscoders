@@ -1,4 +1,18 @@
 Railscoders::Application.routes.draw do
+  get "pages/index"
+
+  get "pages/show"
+
+  get "pages/new"
+
+  get "pages/create"
+
+  get "pages/edit"
+
+  get "pages/update"
+
+  get "pages/destroy"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -55,4 +69,8 @@ Railscoders::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+  
+  
+  #Creating a New Route for the Social Site
+  resources :pages
 end

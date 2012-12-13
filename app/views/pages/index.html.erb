@@ -1,0 +1,6 @@
+<h2>All Pages</h2>
+<ul>
+	<% @pages.each do |page| %>
+	<li><%= page.permalink %> : <%= page.title %></li>
+<% end %>
+</ul>
