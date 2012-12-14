@@ -21,15 +21,6 @@ class PagesController < ApplicationController
   end
 
   def edit
-<<<<<<< HEAD
-  end
-
-  def update
-  end
-
-  def destroy
-  end
-=======
     @page = Page.find(params[:id].to_i)
   end
 
@@ -51,6 +42,5 @@ class PagesController < ApplicationController
       flash[:error] = "There was a problem deleting the page"
     end
     redirect_to :action => 'index'
-    end
->>>>>>> origin/Test123
+   end
 end

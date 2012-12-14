@@ -10,15 +10,13 @@
 <% end %>
 
 <%= form_for :page, :url => pages_url, :html => { :method => :post } do |f| %>
-<p><%=f.label :title, 'Title ' %>
-<%= f.text_field :title, :size => 60 %></p>
-<p><%=f.label :body, 'Body ' %>
-<%=f.text_area :body, :rows => 20, :cols => 60 %></p>
-<<<<<<< HEAD
-<%= submit_tag 'Save' %> or <%= link_to 'cance', pages_url %>
-=======
-<%= submit_tag 'Save' %> or <%= link_to 'cancel', pages_url %>
->>>>>>> origin/Test123
+  <p><%=f.label :title, 'Title ' %>
+  <%= f.text_field :title, :size => 60 %></p>
+  <p><%=f.label :body, 'Body ' %>
+  <%=f.text_area :body, :rows => 20, :cols => 60 %></p>
+
+  <%= submit_tag 'Save' %> or <%= link_to 'cancel', pages_url %>
+
 <% end %>
 
 

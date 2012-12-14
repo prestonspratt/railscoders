@@ -4,10 +4,7 @@ class Page < ActiveRecord::Base
   validates_length_of :body, :maximum => 10000
   
   before_create :create_permalink
-<<<<<<< HEAD
-=======
   before_update :create_permalink #does not seem to work 12/13/12
->>>>>>> origin/Test123
   
   def create_permalink
     @attributes['permalink'] =
